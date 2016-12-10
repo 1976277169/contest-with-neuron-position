@@ -269,7 +269,7 @@ public class Contest_Interface {
 				network.trackHiddenweights();
 				network.trackHiddenweights2();
 				network.trackHiddenage(1);
-
+                network.trackMotorage(1);
 			}
 			
 
@@ -279,6 +279,7 @@ public class Contest_Interface {
 		performance.computeErrorRate();
 		network.outputHiddenLocation();		
 		network.trackHiddenage(2);
+		network.trackMotorage(2);
 		//Write results to file
 		/*
 		switch(modality){
