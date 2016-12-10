@@ -268,7 +268,7 @@ public class Contest_Interface {
 			if(k==1){
 				network.trackHiddenweights();
 				network.trackHiddenweights2();
-				
+				network.trackHiddenage(1);
 
 			}
 			
@@ -278,7 +278,7 @@ public class Contest_Interface {
 		// We divide the total error per Segment by  the number of Segments.
 		performance.computeErrorRate();
 		network.outputHiddenLocation();		
-
+		network.trackHiddenage(2);
 		//Write results to file
 		/*
 		switch(modality){
