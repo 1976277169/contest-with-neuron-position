@@ -18,7 +18,7 @@ public class MotorLayer {
 	private final float MACHINE_FLOAT_ZERO = 0.00001f;
 	private final float TOP_MOTOR_RESPONSE = 1.0f - MACHINE_FLOAT_ZERO;
 	
-	private Neuron[] motorNeurons;
+	public Neuron[] motorNeurons;
 	
 	public MotorLayer(int height, int width, int topK, int hiddenSize){
 		this.setWidth(width);
@@ -229,6 +229,10 @@ public class MotorLayer {
 		this.topK = topK;
 	}
 
+	public int getNumNeurons() {
+		return numNeurons;
+	}
+	
 	public int getNumBottomUpWeights() {
 		return numBottomUpWeights;
 	}
